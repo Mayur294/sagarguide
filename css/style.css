@@ -1,0 +1,470 @@
+*{margin:0; 
+	padding: 0;
+	scroll-behavior: smooth;
+}
+header {
+position: relative;
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../blog3.jpg);
+height: 100vh;
+background-size: cover;
+background-position: center; 
+font-family: Century Gothic;
+
+
+}
+/*navigation bar*/
+ul {
+	z-index: 1;
+list-style: none;
+position: fixed;
+border: 1px solid transparent;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color:rgba(0,0,0,0.5);
+width: 100%;
+text-align: right;
+
+}
+
+ul .navlogo{
+position: absolute;
+left: 0;
+color: #fff;
+}
+
+ul li {
+display: inline-block;
+}
+ul li a {
+text-decoration: none;
+color: #fff;
+padding:5px 20px;
+border:1px solid transparent;
+border-radius: 5px;
+transition: 0.6s ease;
+}
+
+ul li a:hover{
+background-color: #fff;
+color:#000;
+}
+
+ul li.active a{
+background-color: #fff;
+color:#000;
+}
+
+/*logo*/
+
+.logo img{
+	float: right;
+	padding-right: 15px;
+	width: 150px;
+}
+
+.logo-text{
+	position: absolute;
+	top:120px;
+	right:25px;
+	color: grey;
+	
+}
+
+.logo-text h6{
+	padding: 5px;
+	color: grey;
+}
+.logo-text img{
+
+float: left;
+width: 25px;
+}
+
+ /*title*/
+ 	.title{
+ 		position: absolute;
+ 		top: 35%;
+ 		left: 52%;
+ 		transform: translate(-50%,-50%);
+ 	}
+ 	.title h1{color: #fff;
+ 		font-size:90px;
+ 		text-shadow: 5px 5px 3px grey;
+ 	}
+
+/*button*/
+
+ 	.btn,.btn2,.btn3,.btn4{
+ 		border: 1px solid #fff;
+ 		padding: 3px;
+ 		color: #fff;
+ 		font-size: 15px;
+ 		background-color: transparent;
+ 		transition: 0.6s;
+ 	}
+ 	.btn:hover { 
+ 		background-color: #fff;
+ 		color: #000;
+
+ 	 }
+ 	 .btn2:hover { 
+ 		background-color: #fff;
+ 		color: #000;
+ 	}
+ 	.btn3:hover{
+ 		background-color: #fff;
+ 		color: #000;
+ 	}
+ 	.btn4:hover{
+ 		background-color: #fff;
+ 		color: #000;
+ 	}
+
+.btn{
+	width: 170px;
+
+}
+
+.btn2{
+	width: 170px;
+}
+
+.btn3{
+	width: 170px;
+}
+
+.btn4{
+	width: 170px;
+}
+/*position of the button*/
+ 	
+
+ 	.button2{
+	position: absolute;
+	top: 50%;
+	left:40%
+}
+
+.button3{
+	position: absolute;
+	top: 50%;
+	left: 27.5%
+}
+
+.button{
+ 		position:absolute;
+ 		top: 50%;
+ 		left: 52.5%;
+ 	}
+
+
+.button4{
+	position: absolute;
+	top: 50%;
+	left: 65%
+}
+
+
+ 	.button-content{
+ 		display: none;
+ 		border:1px solid #fff;
+ 		width: 100%;
+ 	}
+ 	.button-content a {
+ 		font-size: 13px;
+ 		text-align: center;
+ 		padding: 5px;
+ 		text-decoration: none;
+ 		background-color: rgba(0,0,0,0.5);
+ 		color: #fff;
+ 		display: block; 	
+ 	}
+
+
+ 	/*display content on hover*/
+
+.button:hover .button-content{
+	display: block;
+}
+
+.button2:hover .button-content{
+	display: block;
+}
+
+.button3:hover .button-content{
+	display: block;
+}
+
+.button4:hover .button-content{
+	display: block;
+}
+
+.button-content a:hover{
+	background-color: #fff;
+	color: #000;
+
+}
+/*marquee*/
+.marquee {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.marquee img {
+	height: 180px;
+	width: 300px;
+}
+ .details,.pride td, .pride th, .pos,.about-district, .services, .history h4{
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.uparrow img{
+	z-index: 1;
+ border: 1px solid transparent;
+ border-radius:50%;
+ position: fixed;
+ bottom:35px;
+ right: 10px;
+}
+
+.uparrow img:hover{
+	background-color:lightseagreen;
+}
+
+.sagar-lake{
+	font-family:times new roman; 
+	font-size:17px;
+	background-color:f1f1f1;
+	text-align: justify;
+}
+
+.sagar{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	display: flex;
+}
+
+
+.sagar img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0%;
+	animation-name: sagarlake;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+
+@keyframes sagarlake{
+
+0%{
+	left: 0%;
+}
+
+20%{
+	left: 0%;
+}
+
+40%{
+	left: -100%;
+}
+
+60%{
+	left: -100%;
+}
+
+
+80%{
+	left: -200%;
+}
+
+100%{
+	left: -200%;
+}
+
+
+}
+
+
+
+
+.pride {
+	font-family:times new roman; 
+	font-size:17px;
+	background-color:dimgrey;
+	text-align: justify;
+
+}
+.pride img {height:200px; 
+	width:220px;
+	box-shadow: 2px 2px 2px #fff;
+}
+.pride p {
+	text-align: justify;
+}
+.pride td {
+	vertical-align: top;
+	padding-top: 20px;
+	padding: 0px 10px;
+	color: #fff;
+	border: 1px solid transparent;
+	border-radius: 20px;
+}
+.pride td {
+
+	padding: 10px; 
+}
+.pride td:hover {
+	color: #000;
+
+}
+.pride a{
+	text-decoration-line: none;
+}
+
+.history {
+	font-family:times new roman; 
+	font-size:17px;
+	background-color:f1f1f1;
+	text-align: justify;
+
+}
+
+.history .content{
+	margin-left: 20px;
+	margin-right: 20px
+}
+
+.howtoreach{
+	font-family:times new roman; 
+	font-size:17px;
+	background-color:f1f1f1;
+	text-align: justify;
+
+
+}
+
+.howtoreach dl{
+	margin-right: 20px;
+	margin-left: 20px;
+
+} 
+
+
+
+
+.services {
+	background-image: url(../d.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family:times new roman; 
+	font-size:17px;
+	display: flex;
+	margin: 0px;
+}
+
+
+.services .content{
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 500px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: 1px solid transparent;
+	border-radius: 25%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.services .content a{
+	text-decoration: none;
+	 color: #000;
+	
+}
+
+
+.services .content:hover {
+	background-color: rgba(225,225,225,0.7);
+}
+	
+
+
+/*about*/
+/*
+
+.aboutsection{
+	background-color: f1f1f1;
+	font-family:times new roman; 
+	font-size:17px;
+
+}
+
+.about{
+	margin-right: 20px;
+	margin-left: 20px;
+	width: 100%;
+	display: flex;
+}
+
+.about img{
+	padding:10px; 
+}
+.about h4{
+	cursor: pointer;
+	color: grey;
+}
+.about h4:hover{
+	color: #000;
+
+}
+*/
+
+.aboutsection{
+	background-color: f1f1f1;
+	font-family:times new roman; 
+	font-size:17px;
+}
+
+.about h4{
+	cursor: pointer;
+	color: grey;
+}
+.about h4:hover{
+	color: #000;
+
+}
+
+
+
+
+/*footer*/
+
+footer{background-color: #000;
+	height: 160px;
+
+}
+.copy{
+	text-align: center;
+	color: #fff;
+	padding: 35px;
+}
+.copy a{color: #fff;
+	text-decoration: none;
+}
+.copy img{padding: 0px 5px;
+}
+
+.bottom{float: left;
+	margin-left: 20px;
+}
+ .contact {
+	float: right;
+	margin-right: 20px;
+}
